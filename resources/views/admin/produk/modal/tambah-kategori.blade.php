@@ -9,7 +9,14 @@
         </div>
         <div class="modal-body">
           <label for="">Nama Kategori</label>
-          <input type="text" name="kategori" class="form-control">
+          <select name="kategori" class="form-control">
+            <option value="" selected disabled></option>
+            <option value="Ayam Paketan">Ayam Paketan</option>
+            <option value="Ayam Satuan">Ayam Satuan</option>
+            <option value="Minuman">Minuman</option>
+            <option value="Ice Cream">Ice Cream</option>
+            <option value="Makanan Lainnya">Makanan Lainnya</option>
+          </select>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

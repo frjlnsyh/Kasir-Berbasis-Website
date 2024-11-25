@@ -4,28 +4,6 @@
 
 <div class="row">
   <div class="col-12">
-    <div class="card mb-4">
-      <div class="card-header bg-primary text-white">
-        <b>Kateogri</b>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-9">
-            <div class="row">
-              <div class="col-auto"><a href="" class="btn btn-info">All</a></div>
-              @foreach($kategori as $value)
-              <div class="col-auto"><a href="" class="btn btn-info">{{$value->kategori}}</a></div>
-              @endforeach
-            </div>
-          </div>
-          <div class="col-3 d-flex justify-content-center align-items-center" style="border-left:1px solid black">
-            <a href="" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#kategoriModal">Tambah Produk</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-12">
     <div class="card">
       <div class="card-header bg-primary text-white">
         <b>Data Produk Ayam Paketan</b>

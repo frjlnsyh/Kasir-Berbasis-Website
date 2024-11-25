@@ -21,6 +21,14 @@ class CreatePenjualanTable extends Migration
             $table->integer('jumlah');
             $table->timestamps();
         });
+
+        Schema::create('pengeluaran', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama');
+            $table->integer('harga');
+            $table->text('foto');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -31,5 +39,6 @@ class CreatePenjualanTable extends Migration
     public function down()
     {
         Schema::dropIfExists('penjualan');
+        Schema::dropIfExists('pengeluarab');
     }
 }

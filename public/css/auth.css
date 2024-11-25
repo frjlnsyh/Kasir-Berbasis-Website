@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+
+}
+main .container .brand{ 
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100px;
+    z-index: 999;
+}
+main .container .brand > * { 
+    padding: 0;
+    margin: 0;
+}
+main .container .brand img{ 
+    width: 70px;
+}
+main .container .brand h1 { 
+    font-weight: 600;
+    font-size: 2.5rem;
+} 
+main .container .brand .text-brand { 
+    font-size: 0.9rem;
+}
+main .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+}
+main .container .log {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+main .container .log.active { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+main .container .reg {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    transition: 0.3s ease-in-out;
+}
+main .container .reg.active { 
+    opacity: 1;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    transition: 0.3s ease-in-out;
+}
+main .container > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+main .container .log, main .container .reg{
+    position: relative;
+    background-color: orange;
+}
+main label { 
+    color: white;
+    font-size: 1.1rem;
+}
+main input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    margin: 10px 0 25px 0;
+    padding: 0 5px;
+    width: 240px;
+}
+main input:focus { 
+    border-bottom: 2px solid rgb(104, 127, 255);
+    border-right: 2px solid rgb(104, 127, 255);
+    outline: none;
+}
+main .but-log {
+    display: flex;
+    justify-content: space-between;
+}
+main button { 
+    background-color: blue;
+    padding: 7px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px 0px black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+main .but1,main .but2 { 
+    background-color: black;
+ }
+main button:hover { 
+    transform: scale(1.1);
+}
+main .container .log .brand-log, main .container .reg .brand-log {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+    color: rgb(255, 187, 187);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
